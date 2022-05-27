@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Jost:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul {
+    list-style-type: none;
+}
+h1 {
+    font-family: 'Jost', sans-serif;
+    font-size:2.5rem;
+    font-weight: 900;
+}
+h3 {
+    font-family: 'Jost', sans-serif;
+    font-size:1.3rem;
+    font-weight: 900;
+}
+span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+}
+/*navbar*/
+
+.nav {
+
+    background:white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition:height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .nav-items {
+    list-style: none;
+    display: flex;
+    margin:0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+  
+}
+.nav .nav-items .nav-link a {
+    font-family: 'Jost', sans-serif;
+    color:#69afec; 
+    font-size: 1.3rem;
+}
+.nav .nav-items .nav-link a:hover {
+    color:#5992f3;
+    font-weight: bold;
+   
+}
+.nav .nav-items .nav-link a:active {
+    color:#5992f3;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.nav .nav-brand a {
+    font-size:3rem;
+    padding:1rem 0 ;
+    display:block;
+    color:#3c85c4; 
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600;
+    
+}
+.nav .socialMedia {
+    padding: 1.4rem;
+  
+}
+.text-gray {
+    padding:1rem 0;
+}
+.nav .fab:hover {
+
+    color:#5992f3;
+    transition: 0.5s;
+}
+
+.socialSize {
+    font-size: 1.3rem;
+    color:#69afec;
+}
+/* end navbar*/
+
+.nav .toggle-collapse {
+    position:absolute;
+    top:0;
+    width:90%;
+    cursor: pointer;
+    display:none;
+}
+
+
+.nav .toggle-collapse .toggle-icons {
+    color:#69afec;
+    display:flex;
+    justify-content: end;
+    padding:1rem 0;
+} 
+
+.nav .toggle-icons i {
+    font-size:1.4rem;
+}
+
+.collapse {
+    height:35rem;
+}
+
+/*Responsive nav*/
+@media only screen and (max-width: 750px) {
+
+    .nav .nav-menu,  .nav .nav-items {
+        flex-direction: column;
+
+    }
+    .nav .toggle-collapse {
+        display:initial;
+    }
+    
+}
+
+/* End Responsive nav*/
+
+
+/*Main*/
+
+/*Site Title*/
+main .site-title {
+
+    background:url('/Assets/blogAssets/kazuo-ota-nROQb5XlaVw-unsplash.jpg');
+    background-size:cover;
+    height:60vh;
+    display: flex;
+    justify-content:center;  
+}
+
+main .site-title .site-background {
+
+    padding-top:20rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+main .site-title h1, h3 {
+    margin:.8rem;
+}
+.buttonContainer {
+    position: absolute;
+    top: 45%;
+    left:37%;
+    translate: -50%, -50%;
+  }
+  .Button {
+    /* button reset */
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    /* button style properties */
+    display: block;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600;
+    font-size: 1.6rem;
+    position: relative;
+    padding: 13px 30px;
+    color: white;
+    transition: all 0.5s ease 0.2s, margin-left 0.5s;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .Button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    background-color: #D6E5FF;
+    height: 100%;
+    width: 2px;
+    transition: all 0.2s ease 0s;
+  }
+  .Button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    background-color: #D6E5FF;
+    height: 100%;
+    width: 2px;
+    transition: all 0.2s ease 0s;
+  }
+  .Button:hover::before {
+    left: 0;
+  }
+  .Button:hover::after {
+    right: 0;
+  }
+  .Button:hover {
+    color:#3c85c4; 
+    background-color: #D6E5FF;
+    font-weight: 600;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #D6E5FF;
+    -moz-box-shadow: inset 0px 0px 0px 2px #D6E5FF;
+    box-shadow: inset 0px 0px 0px 2px #D6E5FF;
+    cursor: pointer;
+    margin-left: 0;
+  }
+  .Button:focus {
+    outline: none;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+
+    .buttonContainer {
+        
+        top:50%;
+
+    }
+    
+    
+}
+@media only screen and (max-width: 433px) {
+
+    .buttonContainer {
+        
+        top:65%;
+
+    }
+    
+    
+}
+
+@media only screen and (max-width: 1630px) {
+
+    .buttonContainer {
+        
+        top:50%;
+
+    }
+    
+    
+}
+/*End Site Title*/
+
+/*Blog Carousel*/
+
+
+main .blog .blog-post {
+    padding-top:6rem;
+}
+
+main .blog-post .blog-content {
+    
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    width:70%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+main .blog-post .blog-content .blog-title {
+    padding:2rem 0;
+}
+main .blog-post .blog-content .blogButton {
+    
+    padding:.6rem 2rem;
+    background-color: #69afec;
+    margin: .5rem;
+    border-color:#5992f3;
+    color:#fff;
+   border-radius: 1.5rem .5rem;
+
+}
+main .blog-post span {
+    display: block;
+}
+container {
+    margin:0 5vw;
+    
+}
+
+
+
+/*End Blog Carousel*/
+
+
+
+
+
+
+
+/*End Main*/
